@@ -1,556 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Tetra Technology is a Glasgow based software development company that offers digital transformation consultancy, bespoke software development and complex systems integrations.">
-    <meta name="author" content="Andrew MacBean">
-
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="Tetra Technology" /> <!-- website name -->
-	<meta property="og:site" content="https://tetratechnology.co.uk" /> <!-- website link -->
-	<meta property="og:title" content="Tetra Technology"/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="Tetra Technology" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="https://tetratechnology.co.uk/branding/logo-onwhite.jpg" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="https://tetratechnology.co.uk" /> <!-- where do you want your post to link to -->
-	<meta property="og:type" content="article" />
-
-    <!-- Website Title -->
-    <title>Tetra Technology Limited</title>
-    
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tetra Connect — Real-time identity resolution &amp; person matching</title>
+<meta name="description" content="Tetra Connect: real-time identity resolution and person matching. A product of Tetra Technology Ltd.">
+<meta property="og:title" content="Tetra Connect">
+<meta property="og:description" content="Real-time identity resolution and person matching. A product of Tetra Technology Ltd.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0f1526; color: #eef1f6; font-family: 'IBM Plex Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #67bd9f; text-decoration: none; }
+  a:hover { color: #00aad9; }
+  h1,h2,h3 { font-family: 'Space Grotesk', sans-serif; }
+  @keyframes rowIn { 0%{opacity:0; transform:translateY(7px);} 9%{opacity:1; transform:translateY(0);} 85%{opacity:1; transform:translateY(0);} 96%,100%{opacity:0; transform:translateY(7px);} }
+  @keyframes barFill { 0%,7%{transform:scaleX(0);} 20%{transform:scaleX(1);} 85%{transform:scaleX(1);} 96%,100%{transform:scaleX(0);} }
+  @keyframes caret { 0%,49%{opacity:1;} 50%,100%{opacity:0;} }
+</style>
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
-    <!-- Preloader -->
-	<div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
+<body>
+<div style="width:100%; overflow:hidden;">
+
+  <!-- ========= NAV ========= -->
+  <div style="position:sticky; top:0; z-index:50; background:rgba(15,21,38,.86); backdrop-filter:blur(10px); border-bottom:1px solid rgba(255,255,255,.08);">
+    <div style="max-width:1240px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:18px 48px;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="font-family:'Gemunu Libre',sans-serif; font-weight:700; font-size:24px; letter-spacing:2px; background:linear-gradient(120deg,#67bd9f,#00aad9); -webkit-background-clip:text; background-clip:text; color:transparent;">TETRA</span>
+        <span style="width:1px;height:18px;background:#fff;opacity:.22;"></span>
+        <span style="font-family:'Gemunu Libre',sans-serif; font-weight:600; font-size:14px; letter-spacing:5px; color:#eef1f6;">CONNECT</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:36px; font-size:14px; color:#aab2c8;">
+        <a href="#capabilities" style="color:#aab2c8;">Capabilities</a>
+        <a href="#scoring" style="color:#aab2c8;">Scoring</a>
+        <a href="#security" style="color:#aab2c8;">Security</a>
+        <a href="#use-cases" style="color:#aab2c8;">Use cases</a>
+        <a href="#demo" style="background:linear-gradient(120deg,#67bd9f,#00aad9); color:#0d1424; font-weight:600; padding:11px 20px; border-radius:2px;">Book a demo</a>
+      </div>
     </div>
-    <!-- end of preloader -->
-    
+  </div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-
-        <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="https://tetratechnology.co.uk/images/logo.png" alt="Tetra Technology Logo"></a>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-awesome fas fa-bars"></span>
-            <span class="navbar-toggler-awesome fas fa-times"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#about">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#products">PRODUCTS &amp; SERVICES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#work">WORK</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#team">TEAM</a>
-                </li>
-            </ul>
-            <span class="nav-item social-icons">
-                <span class="fa-stack">
-                    <a href="https://facebook.com/tetratechuk">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-facebook-f fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="https://twitter.com/tetratechuk">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-twitter fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="https://www.linkedin.com/company/tetratechuk">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-linkedin fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="mailto:sales@tetratechnology.co.uk">
-                        <span class="hexagon"></span>
-                        <i class="far fa-envelope fa-stack-1x"></i>
-                    </a>
-                </span>
-            </span>
+  <!-- ========= HERO ========= -->
+  <div style="border-bottom:1px solid rgba(255,255,255,.08); background:radial-gradient(120% 90% at 82% 8%, rgba(0,170,217,.10), rgba(15,21,38,0) 55%);">
+    <div style="max-width:1240px; margin:0 auto; padding:104px 48px 92px; display:grid; grid-template-columns:1.05fr .95fr; gap:64px; align-items:center;">
+      <div>
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:28px;"><span style="width:7px;height:7px;background:linear-gradient(120deg,#67bd9f,#00aad9);"></span><span style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:3px; color:#67bd9f; text-transform:uppercase;">Identity Resolution Platform</span></div>
+        <h1 style="margin:0 0 26px; font-weight:700; font-size:62px; line-height:0.99; letter-spacing:-0.03em;">Find the person, not the record.</h1>
+        <p style="margin:0 0 36px; font-size:18px; line-height:1.62; color:#aab2c8; max-width:500px;">Tetra Connect resolves and matches person records across your systems in real time — even when names, spellings and dates don't line up. Self-hosted, explainable, and built to search millions of records in under a second.</p>
+        <div style="display:flex; gap:0; border:1px solid rgba(255,255,255,.16); width:fit-content;">
+          <a href="#demo" style="background:linear-gradient(120deg,#67bd9f,#00aad9); color:#0d1424; font-weight:600; font-size:15px; padding:15px 28px;">Book a demo</a>
+          <a href="#how" style="color:#eef1f6; font-weight:500; font-size:15px; padding:15px 28px; border-left:1px solid rgba(255,255,255,.16);">How it works</a>
         </div>
-    </nav>
-
-
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="text-container">
-                            <h1><span id="js-rotating">TETRA TECHNOLOGY, TECHNOLOGY CONSULTING, SOFTWARE DEVELOPMENT, SYSTEMS INTEGRATION</span></h1>
-                            <p class="p-heading p-large">We care about the success of your business and proactively advise you on how to maximise your business potential.</p>
-                            <a class="btn-solid-lg page-scroll" href="#about">ABOUT</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div style="margin-top:34px; display:flex; align-items:center; gap:18px; font-family:'IBM Plex Mono',monospace; font-size:12px; color:#8b93a7; letter-spacing:.5px;">
+          <span style="border:1px solid rgba(255,255,255,.14); padding:5px 12px; color:#c3cadb;">G-Cloud 14</span>
+          <span>Self-hosted</span><span style="opacity:.4;">·</span><span>Built in the UK</span>
         </div>
-    </header>
-
-
-    <!-- Intro -->
-    <div id="about" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="text-container">
-                        <div class="section-title">ABOUT US</div>
-                        <h2>Tetra Technology</h2>
-                        <p class="testimonial-text">Our highly experienced development team works with our clients to ensure we lead them through the process from inception to delivery of business ready software.</p>
-						<p class="testimonial-text">Our wealth of experience enables us to gather requirements and select optimal solutions with unrivalled speed and efficiency to ensure speedy delivery.</p>
-						<p class="testimonial-text">Our cost-effective delivery model enables us to meet client requirements of any scale and complexity.</p>
-                        <div class="testimonial-author">Andrew MacBean</div>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/tetra.png" alt="alternative">
-                    </div>
-                </div>
-            </div>
+      </div>
+      <!-- signature console -->
+      <div style="border:1px solid rgba(255,255,255,.12); background:#0b0f1c; box-shadow:0 40px 80px -40px rgba(0,0,0,.6);">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:13px 16px; border-bottom:1px solid rgba(255,255,255,.1);">
+          <div style="display:flex; align-items:center; gap:10px;"><span style="color:#67bd9f;">⌕</span><span style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#c3cadb;">Jonathan Smith · 1985-04-12</span><span style="animation:caret 1.05s step-end infinite; color:#67bd9f; font-family:'IBM Plex Mono',monospace; font-size:13px;">▌</span></div>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5b6478;">165ms</span>
         </div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:10px; color:#5b6478; letter-spacing:1px; padding:11px 16px 7px; display:flex; justify-content:space-between;"><span>3 CANDIDATES · 1,000,000 SEARCHED</span><span>MATCH</span></div>
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-top:1px solid rgba(255,255,255,.06); background:rgba(103,189,159,.06); opacity:0; animation:rowIn 5.5s ease-in-out infinite; animation-delay:.3s;"><div><div style="font-size:14px; font-weight:600;">Jon A. Smith</div><div style="font-size:11px; color:#8b93a7; font-family:'IBM Plex Mono',monospace;">glasgow · exact dob</div></div><div style="display:flex; align-items:center; gap:12px;"><span style="width:76px; height:4px; background:rgba(255,255,255,.08); display:block;"><span style="display:block; width:98%; height:4px; background:linear-gradient(90deg,#67bd9f,#00aad9); transform-origin:left; animation:barFill 5.5s ease-in-out infinite; animation-delay:.45s;"></span></span><span style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:18px; color:#67bd9f; width:26px; text-align:right;">98</span></div></div>
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-top:1px solid rgba(255,255,255,.06); opacity:0; animation:rowIn 5.5s ease-in-out infinite; animation-delay:.75s;"><div><div style="font-size:14px; font-weight:600;">Jonathon Smyth</div><div style="font-size:11px; color:#8b93a7; font-family:'IBM Plex Mono',monospace;">phonetic match</div></div><div style="display:flex; align-items:center; gap:12px;"><span style="width:76px; height:4px; background:rgba(255,255,255,.08); display:block;"><span style="display:block; width:86%; height:4px; background:linear-gradient(90deg,#67bd9f,#00aad9); transform-origin:left; animation:barFill 5.5s ease-in-out infinite; animation-delay:.9s;"></span></span><span style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:18px; color:#00aad9; width:26px; text-align:right;">86</span></div></div>
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-top:1px solid rgba(255,255,255,.06); opacity:0; animation:rowIn 5.5s ease-in-out infinite; animation-delay:1.2s;"><div><div style="font-size:14px; font-weight:600;">Bill Smith</div><div style="font-size:11px; color:#8b93a7; font-family:'IBM Plex Mono',monospace;">synonym · transposed dob</div></div><div style="display:flex; align-items:center; gap:12px;"><span style="width:76px; height:4px; background:rgba(255,255,255,.08); display:block;"><span style="display:block; width:73%; height:4px; background:linear-gradient(90deg,#67bd9f,#00aad9); transform-origin:left; animation:barFill 5.5s ease-in-out infinite; animation-delay:1.35s;"></span></span><span style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:18px; color:#c3cadb; width:26px; text-align:right;">73</span></div></div>
+      </div>
     </div>
+  </div>
 
+  <!-- ========= PROBLEM ========= -->
+  <div style="border-bottom:1px solid rgba(255,255,255,.08);">
+    <div style="max-width:1240px; margin:0 auto; padding:88px 48px;">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:3px; color:#8b93a7; text-transform:uppercase; margin-bottom:22px;">The problem</div>
+      <h2 style="margin:0 0 22px; font-weight:700; font-size:40px; line-height:1.06; letter-spacing:-0.02em; max-width:760px;">Your data doesn't agree with itself.</h2>
+      <p style="margin:0 0 48px; font-size:18px; line-height:1.62; color:#aab2c8; max-width:720px;">The same person shows up a dozen different ways across your systems — a misspelt surname here, a nickname there, a transposed date of birth, an address from three years ago. Exact-match lookups miss them, and every miss is a duplicate record, an unseen risk, or a citizen asked to repeat themselves.</p>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid rgba(255,255,255,.08);">
+        <div style="padding:28px 28px 4px; border-right:1px solid rgba(255,255,255,.08);"><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:18px; margin-bottom:8px;">Misspellings &amp; typos</div><p style="margin:0; font-size:14px; line-height:1.55; color:#8b93a7;">Smith, Smyth, Smithe — one keystroke apart, invisible to exact match.</p></div>
+        <div style="padding:28px 28px 4px; border-right:1px solid rgba(255,255,255,.08);"><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:18px; margin-bottom:8px;">Aliases &amp; nicknames</div><p style="margin:0; font-size:14px; line-height:1.55; color:#8b93a7;">William, Bill, Billy, Will — the same person, four different records.</p></div>
+        <div style="padding:28px 28px 4px;"><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:18px; margin-bottom:8px;">Transposed dates</div><p style="margin:0; font-size:14px; line-height:1.55; color:#8b93a7;">04-12 or 12-04? A flipped date of birth breaks a lookup entirely.</p></div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Description -->
-    <div class="cards-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Card -->
-                    <div class="card">
-                        <span class="fa-stack">
-                            <span class="hexagon"></span>
-                            <i class="fas fa-tachometer-alt fa-stack-1x"></i>
-                        </span>
-                        <div class="card-body">
-                            <h4 class="card-title">Speed of Delivery</h4>
-                            <p>Our agile approach to development ensures we work with you to get fast results and reduce the time to market. This in turns allows you to get maximum return on your investment, delivering real business change.</p>
-                        </div>
-                    </div>
+  <!-- ========= CAPABILITIES ========= -->
+  <div id="capabilities" style="border-bottom:1px solid rgba(255,255,255,.08); background:#0b0f1c;">
+    <div style="max-width:1240px; margin:0 auto; padding:88px 48px;">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:3px; color:#67bd9f; text-transform:uppercase; margin-bottom:22px;">Matching</div>
+      <h2 style="margin:0 0 22px; font-weight:700; font-size:40px; line-height:1.06; letter-spacing:-0.02em; max-width:760px;">One query. Every variation, ranked.</h2>
+      <p style="margin:0 0 52px; font-size:18px; line-height:1.62; color:#aab2c8; max-width:720px;">Tetra Connect blends several matching strategies into a single search, then ranks every candidate by a calculated match score — so the right person surfaces at the top, even from imperfect data.</p>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid rgba(255,255,255,.08); border-left:1px solid rgba(255,255,255,.08);">
+        <div style="padding:34px 30px; border-right:1px solid rgba(255,255,255,.08); border-bottom:1px solid rgba(255,255,255,.08);"><div style="width:8px;height:8px;background:linear-gradient(120deg,#67bd9f,#00aad9); margin-bottom:18px;"></div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px; margin-bottom:9px;">Fuzzy &amp; typo-tolerant</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Finds records despite misspellings, extra characters and transposed letters — Jhon still finds John.</p></div>
+        <div style="padding:34px 30px; border-right:1px solid rgba(255,255,255,.08); border-bottom:1px solid rgba(255,255,255,.08);"><div style="width:8px;height:8px;background:linear-gradient(120deg,#67bd9f,#00aad9); margin-bottom:18px;"></div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px; margin-bottom:9px;">Phonetic matching</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Catches names that sound alike but are spelled differently — Smith and Smyth, Catherine and Kathryn.</p></div>
+        <div style="padding:34px 30px; border-right:1px solid rgba(255,255,255,.08); border-bottom:1px solid rgba(255,255,255,.08);"><div style="width:8px;height:8px;background:linear-gradient(120deg,#67bd9f,#00aad9); margin-bottom:18px;"></div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px; margin-bottom:9px;">Nicknames &amp; synonyms</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Knows William is also Bill, Billy and Will — with a built-in library you can extend with your own.</p></div>
+        <div style="padding:34px 30px; border-right:1px solid rgba(255,255,255,.08);"><div style="width:8px;height:8px;background:linear-gradient(120deg,#67bd9f,#00aad9); margin-bottom:18px;"></div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px; margin-bottom:9px;">Date-of-birth tolerance</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Matches close and partial dates within a range you control, scored by how near they fall.</p></div>
+        <div style="padding:34px 30px; border-right:1px solid rgba(255,255,255,.08);"><div style="width:8px;height:8px;background:linear-gradient(120deg,#67bd9f,#00aad9); margin-bottom:18px;"></div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px; margin-bottom:9px;">Real-time results</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Sub-second responses whether you're searching thousands of records or tens of millions.</p></div>
+        <div style="padding:34px 30px;"><div style="width:8px;height:8px;background:linear-gradient(120deg,#67bd9f,#00aad9); margin-bottom:18px;"></div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px; margin-bottom:9px;">Ranked, filtered output</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Every candidate scored and ordered, with a minimum threshold that filters out the noise.</p></div>
+      </div>
+    </div>
+  </div>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <span class="fa-stack">
-                            <span class="hexagon"></span>
-                            <i class="fas fa-clipboard-check fa-stack-1x"></i>
-                        </span>
-                        <div class="card-body">
-                            <h4 class="card-title">Quality of Service</h4>
-                            <p>Undertaking continuous testing meaning we discover and fix bugs early in the cycle that guarantee a high quality delivery every time you engage with us.</p>
-                        </div>
-                    </div>
+  <!-- ========= HOW IT WORKS ========= -->
+  <div id="how" style="border-bottom:1px solid rgba(255,255,255,.08);">
+    <div style="max-width:1240px; margin:0 auto; padding:88px 48px;">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:3px; color:#67bd9f; text-transform:uppercase; margin-bottom:22px;">How it works</div>
+      <h2 style="margin:0 0 52px; font-weight:700; font-size:40px; line-height:1.06; letter-spacing:-0.02em; max-width:760px;">From your data to a ranked match.</h2>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0;">
+        <div style="padding-right:28px;"><div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;"><span style="width:10px;height:10px;background:#67bd9f;"></span><span style="flex:1; height:1px; background:rgba(255,255,255,.12);"></span></div><div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5b6478; margin-bottom:8px;">01</div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:20px; margin-bottom:9px;">Ingest</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Connect to your existing databases and read person records from source.</p></div>
+        <div style="padding-right:28px;"><div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;"><span style="width:10px;height:10px;background:#67bd9f;"></span><span style="flex:1; height:1px; background:rgba(255,255,255,.12);"></span></div><div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5b6478; margin-bottom:8px;">02</div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:20px; margin-bottom:9px;">Index</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Build optimised, searchable indexes — refreshed live, with zero downtime.</p></div>
+        <div style="padding-right:28px;"><div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;"><span style="width:10px;height:10px;background:#00aad9;"></span><span style="flex:1; height:1px; background:rgba(255,255,255,.12);"></span></div><div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5b6478; margin-bottom:8px;">03</div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:20px; margin-bottom:9px;">Search</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Query by name and date of birth through a simple REST API.</p></div>
+        <div><div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;"><span style="width:10px;height:10px;background:#00aad9;"></span></div><div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#5b6478; margin-bottom:8px;">04</div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:20px; margin-bottom:9px;">Score</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Every candidate scored and ranked, filtered to the threshold you set.</p></div>
+      </div>
+    </div>
+  </div>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <span class="fa-stack">
-                            <span class="hexagon"></span>
-                            <i class="fas fa-pound-sign fa-stack-1x"></i>
-                        </span>
-                        <div class="card-body">
-                            <h4 class="card-title">Value for Money</h4>
-                            <p>Our quick route to market, close customer engagement and exceptionally high development standards allow each client to achieve the maximum return on investment for the right price.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+  <!-- ========= EXPLAINABLE SCORING ========= -->
+  <div id="scoring" style="border-bottom:1px solid rgba(255,255,255,.08);">
+    <div style="max-width:1240px; margin:0 auto; padding:88px 48px; display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:3px; color:#67bd9f; text-transform:uppercase; margin-bottom:22px;">Explainable by design</div>
+        <h2 style="margin:0 0 22px; font-weight:700; font-size:40px; line-height:1.06; letter-spacing:-0.02em;">Every score, fully accountable.</h2>
+        <p style="margin:0 0 24px; font-size:18px; line-height:1.62; color:#aab2c8; max-width:480px;">No black box. Every match breaks down to the field level — see exactly how first name, last name and date of birth each contributed, and the weight behind them.</p>
+        <p style="margin:0; font-size:16px; line-height:1.62; color:#8b93a7; max-width:480px;">Defensible for audit and compliance. Transparent enough to trust, and to tune.</p>
+      </div>
+      <!-- score breakdown panel -->
+      <div style="border:1px solid rgba(255,255,255,.12); background:#0b0f1c;">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:18px 20px; border-bottom:1px solid rgba(255,255,255,.1);">
+          <div><div style="font-size:15px; font-weight:600;">Jon A. Smith</div><div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#8b93a7;">ext-id 12345</div></div>
+          <div style="text-align:right;"><div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:28px; background:linear-gradient(120deg,#67bd9f,#00aad9); -webkit-background-clip:text; background-clip:text; color:transparent;">0.95</div><div style="font-family:'IBM Plex Mono',monospace; font-size:10px; color:#8b93a7;">PERSON SCORE</div></div>
         </div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:10px; color:#5b6478; letter-spacing:1px; padding:12px 20px 8px; display:flex; justify-content:space-between;"><span>FIELD</span><span>WEIGHT · SCORE</span></div>
+        <div style="padding:12px 20px; border-top:1px solid rgba(255,255,255,.06);"><div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:9px;"><span style="font-size:14px;">Last name</span><span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#8b93a7;">40 · 1.00</span></div><span style="display:block; width:100%; height:4px; background:rgba(255,255,255,.07);"><span style="display:block; width:100%; height:4px; background:linear-gradient(90deg,#67bd9f,#00aad9);"></span></span></div>
+        <div style="padding:12px 20px; border-top:1px solid rgba(255,255,255,.06);"><div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:9px;"><span style="font-size:14px;">First name</span><span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#8b93a7;">30 · 0.92</span></div><span style="display:block; width:100%; height:4px; background:rgba(255,255,255,.07);"><span style="display:block; width:92%; height:4px; background:linear-gradient(90deg,#67bd9f,#00aad9);"></span></span></div>
+        <div style="padding:12px 20px 18px; border-top:1px solid rgba(255,255,255,.06);"><div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:9px;"><span style="font-size:14px;">Date of birth</span><span style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#8b93a7;">30 · 1.00</span></div><span style="display:block; width:100%; height:4px; background:rgba(255,255,255,.07);"><span style="display:block; width:100%; height:4px; background:linear-gradient(90deg,#67bd9f,#00aad9);"></span></span></div>
+      </div>
     </div>
+  </div>
 
+  <!-- ========= CONFIGURABLE ========= -->
+  <div style="border-bottom:1px solid rgba(255,255,255,.08); background:#0b0f1c;">
+    <div style="max-width:1240px; margin:0 auto; padding:88px 48px;">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:3px; color:#67bd9f; text-transform:uppercase; margin-bottom:22px;">Tune it to your data</div>
+      <h2 style="margin:0 0 22px; font-weight:700; font-size:40px; line-height:1.06; letter-spacing:-0.02em; max-width:760px;">Configured to your data, not ours.</h2>
+      <p style="margin:0 0 40px; font-size:18px; line-height:1.62; color:#aab2c8; max-width:720px;">Every dataset is different. Adjust field weights, matching tolerance, date ranges, score thresholds and your own synonym lists through configuration — no code changes, no redeploy of your application.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:10px;">
+        <span style="border:1px solid rgba(255,255,255,.14); padding:9px 16px; font-family:'IBM Plex Mono',monospace; font-size:13px; color:#c3cadb;">Field weights</span>
+        <span style="border:1px solid rgba(255,255,255,.14); padding:9px 16px; font-family:'IBM Plex Mono',monospace; font-size:13px; color:#c3cadb;">Fuzzy tolerance</span>
+        <span style="border:1px solid rgba(255,255,255,.14); padding:9px 16px; font-family:'IBM Plex Mono',monospace; font-size:13px; color:#c3cadb;">Date range</span>
+        <span style="border:1px solid rgba(255,255,255,.14); padding:9px 16px; font-family:'IBM Plex Mono',monospace; font-size:13px; color:#c3cadb;">Score threshold</span>
+        <span style="border:1px solid rgba(255,255,255,.14); padding:9px 16px; font-family:'IBM Plex Mono',monospace; font-size:13px; color:#c3cadb;">Phonetic scaling</span>
+        <span style="border:1px solid rgba(255,255,255,.14); padding:9px 16px; font-family:'IBM Plex Mono',monospace; font-size:13px; color:#c3cadb;">Custom synonyms</span>
+      </div>
+    </div>
+  </div>
 
-    <!-- Products -->
-    <div id="products" class="cards-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">OUR PRODUCTS & SERVICES</div>
-                    <h2>What We Offer</h2>
-                </div>
-            </div> 
-            <div class="row">
-                <div class="col-lg-12">
+  <!-- ========= LIVE INDEXING ========= -->
+  <div style="border-bottom:1px solid rgba(255,255,255,.08);">
+    <div style="max-width:1240px; margin:0 auto; padding:88px 48px; display:grid; grid-template-columns:1.05fr .95fr; gap:64px; align-items:center;">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:3px; color:#67bd9f; text-transform:uppercase; margin-bottom:22px;">Ingestion</div>
+        <h2 style="margin:0 0 22px; font-weight:700; font-size:40px; line-height:1.06; letter-spacing:-0.02em;">New data in, with zero downtime.</h2>
+        <p style="margin:0; font-size:18px; line-height:1.62; color:#aab2c8; max-width:480px;">Index and synchronise records while searches keep running — no maintenance window, no dropped queries. Trigger a full rebuild or sync individual records as your data changes.</p>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.12); background:#0b0f1c; padding:44px 40px;">
+        <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:66px; line-height:1; letter-spacing:-0.03em; background:linear-gradient(120deg,#67bd9f,#00aad9); -webkit-background-clip:text; background-clip:text; color:transparent;">100M</div>
+        <div style="font-size:17px; color:#eef1f6; margin-top:12px; font-weight:600;">records indexed in ~15 minutes</div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#8b93a7; margin-top:10px; line-height:1.55;">Benchmarked on modest hardware — faster with more. Live searches stay online throughout.</div>
+      </div>
+    </div>
+  </div>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="images/tetra-connect.png" alt="alternative">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Tetra Connect</h3>
-                            <p>Tetra Connect offers a streamlined solution for the intricate process of identity resolution and person matching, delivering precise outcomes customised to meet your specific requirements:</p>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Real-time identity search: Achieve instantaneous and precise results.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Advanced data matching: Easily manage name variations and aliases.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Fuzzy matching: Utilise phonetic queries for thorough outcomes.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Customisable scoring: Personalise result sets based on specific metrics.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Efficient data management: Index and synchronise big data seamlessly.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Seamless integration: Effortlessly connect with multiple database providers.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Cloud-native architecture: Deploy flexibly on-premises or as a managed service.</div>
-                                </li>
-                                <li class="media">
-                                        <i class="fas fa-square"></i>
-                                        <div class="media-body">Java Based: Secure, mature and performant.</div>
-                                </li>
-                            </ul>
-                        </div>
+  <!-- ========= METRICS ========= -->
+  <div style="border-bottom:1px solid rgba(255,255,255,.08);">
+    <div style="max-width:1240px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr);">
+      <div style="padding:52px 32px; border-right:1px solid rgba(255,255,255,.08);"><div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:40px; background:linear-gradient(120deg,#67bd9f,#00aad9); -webkit-background-clip:text; background-clip:text; color:transparent;">&lt;1s</div><div style="font-size:11px; color:#8b93a7; font-family:'IBM Plex Mono',monospace; margin-top:8px; letter-spacing:1px;">SEARCH RESPONSE</div></div>
+      <div style="padding:52px 32px; border-right:1px solid rgba(255,255,255,.08);"><div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:40px; background:linear-gradient(120deg,#67bd9f,#00aad9); -webkit-background-clip:text; background-clip:text; color:transparent;">Zero</div><div style="font-size:11px; color:#8b93a7; font-family:'IBM Plex Mono',monospace; margin-top:8px; letter-spacing:1px;">DOWNTIME UPDATES</div></div>
+      <div style="padding:52px 32px; border-right:1px solid rgba(255,255,255,.08);"><div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:40px; background:linear-gradient(120deg,#67bd9f,#00aad9); -webkit-background-clip:text; background-clip:text; color:transparent;">Air-gap</div><div style="font-size:11px; color:#8b93a7; font-family:'IBM Plex Mono',monospace; margin-top:8px; letter-spacing:1px;">CAPABLE</div></div>
+      <div style="padding:52px 32px;"><div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:40px; background:linear-gradient(120deg,#67bd9f,#00aad9); -webkit-background-clip:text; background-clip:text; color:transparent;">100%</div><div style="font-size:11px; color:#8b93a7; font-family:'IBM Plex Mono',monospace; margin-top:8px; letter-spacing:1px;">SELF-HOSTED</div></div>
+    </div>
+  </div>
 
-                        <div class="button-container">
-                            <a class="btn-solid-reg page-scroll" href="#callMe">REQUEST CALLBACK</a>
-                        </div>
-                    </div>
+  <!-- ========= SECURITY & DEPLOYMENT ========= -->
+  <div id="security" style="border-bottom:1px solid rgba(255,255,255,.08); background:#0b0f1c;">
+    <div style="max-width:1240px; margin:0 auto; padding:88px 48px;">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:3px; color:#67bd9f; text-transform:uppercase; margin-bottom:22px;">Security &amp; deployment</div>
+      <h2 style="margin:0 0 22px; font-weight:700; font-size:40px; line-height:1.06; letter-spacing:-0.02em; max-width:820px;">Runs in your environment. Your data never leaves.</h2>
+      <p style="margin:0 0 52px; font-size:18px; line-height:1.62; color:#aab2c8; max-width:760px;">Tetra Connect deploys as containerised microservices inside your own perimeter — cloud or on-premises. Person data never leaves your environment, so sovereignty stays entirely with you. It can run fully air-gapped, with no outbound connection to us or anyone else, and health checks and metrics are built in.</p>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid rgba(255,255,255,.08);">
+        <div style="padding:30px 28px 6px; border-right:1px solid rgba(255,255,255,.08);"><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:17px; margin-bottom:8px;">Self-hosted</div><p style="margin:0; font-size:13.5px; line-height:1.55; color:#8b93a7;">Your infrastructure, your keys, your network.</p></div>
+        <div style="padding:30px 28px 6px; border-right:1px solid rgba(255,255,255,.08);"><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:17px; margin-bottom:8px;">Data sovereignty</div><p style="margin:0; font-size:13.5px; line-height:1.55; color:#8b93a7;">Records never leave your environment — sovereignty stays yours.</p></div>
+        <div style="padding:30px 28px 6px; border-right:1px solid rgba(255,255,255,.08);"><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:17px; margin-bottom:8px;">Air-gap ready</div><p style="margin:0; font-size:13.5px; line-height:1.55; color:#8b93a7;">Runs with no outbound connectivity, fully isolated.</p></div>
+        <div style="padding:30px 28px 6px;"><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:17px; margin-bottom:8px;">Isolated per source</div><p style="margin:0; font-size:13.5px; line-height:1.55; color:#8b93a7;">Separate deployments keep data sources apart.</p></div>
+      </div>
+    </div>
+  </div>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="images/tetra-consult.png" alt="alternative">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Tetra Consult</h3>
-                            <p>Utilising our agile and software delivery expertise, Tetra provides high-quality solutions that comply with the Digital Service Standard.</p>
-                            <p>From on-premises integration, cloud-native apps, cloud production support, we adhere to industry best practices in design, development, testing, and delivery for diverse scenarios.</p>
-
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">A relentless focus on iterative delivery for quick feedback cycles.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Drive continuous delivery and deployment through automation.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Extensive expertise across various sectors.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Excel in enterprise systems, from legacy monoliths to event-driven microservices.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Seamlessly align technology with business needs, and user needs.</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="button-container">
-                            <a class="btn-solid-reg page-scroll" href="#callMe">REQUEST CALLBACK</a>
-                        </div>
-                    </div>
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="images/g-cloud-black.png" alt="alternative">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">G-Cloud 14 Supplier</h3>
-                            <p>As an approved supplier on the UK Government’s G-Cloud framework, we offer several advantages to public sector organisations:</p>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Our services can be procured quickly and easily through the Digital Marketplace, eliminating lengthy tender processes.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Being part of the G-Cloud framework means our solutions meet stringent government standards, giving you confidence in quality and compliance.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">We are approved to work with central government, local authorities, NHS organisations, educational institutions, and more.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Standardised terms and conditions ensure smooth and efficient contract negotiations, so you can get started without delays.</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Partnering with a G-Cloud supplier demonstrates your commitment to leveraging government-approved technology.</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="button-container">
-                            <a class="btn-solid-reg page-scroll" href="https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/238082550819110" target="_blank">Tetra Connect</a>
-                            <a class="btn-solid-reg page-scroll" href="https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/434881679885663" target="_blank">Tetra Consult</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+  <!-- ========= USE CASES ========= -->
+  <div id="use-cases" style="border-bottom:1px solid rgba(255,255,255,.08);">
+    <div style="max-width:1240px; margin:0 auto; padding:88px 48px;">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:3px; color:#67bd9f; text-transform:uppercase; margin-bottom:22px;">Where it's used</div>
+      <h2 style="margin:0 0 32px; font-weight:700; font-size:40px; line-height:1.06; letter-spacing:-0.02em; max-width:760px;">Built for wherever identity matters.</h2>
+      <div style="border:1px solid rgba(103,189,159,.35); background:rgba(103,189,159,.06); padding:32px 34px; margin-bottom:20px; display:flex; align-items:center; justify-content:space-between; gap:32px; flex-wrap:wrap;">
+        <div style="max-width:700px;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:13px;"><span style="border:1px solid rgba(255,255,255,.16); padding:4px 11px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:#c3cadb;">G-Cloud 14</span><span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:2px; color:#67bd9f; text-transform:uppercase;">Featured</span></div>
+          <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; margin-bottom:10px;">Government &amp; public sector</div>
+          <p style="margin:0; font-size:15px; line-height:1.6; color:#aab2c8; max-width:620px;">Resolve a single, accurate view of a citizen across services — with the data sovereignty and air-gap assurances the public sector demands. Approved to buy on the G-Cloud 14 framework, without a lengthy tender.</p>
         </div>
+        <a href="#demo" style="border:1px solid rgba(103,189,159,.5); color:#67bd9f; font-weight:600; font-size:14px; padding:13px 24px; white-space:nowrap;">Book a demo →</a>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid rgba(255,255,255,.08); border-left:1px solid rgba(255,255,255,.08);">
+        <div style="padding:32px 30px; border-right:1px solid rgba(255,255,255,.08); border-bottom:1px solid rgba(255,255,255,.08);"><div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#67bd9f; margin-bottom:14px;">01</div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px; margin-bottom:9px;">Fraud &amp; risk</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Spot the same individual behind slightly different identities.</p></div>
+        <div style="padding:32px 30px; border-right:1px solid rgba(255,255,255,.08); border-bottom:1px solid rgba(255,255,255,.08);"><div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#67bd9f; margin-bottom:14px;">02</div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px; margin-bottom:9px;">KYC &amp; AML onboarding</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Match applicants against watchlists and existing customers.</p></div>
+        <div style="padding:32px 30px; border-right:1px solid rgba(255,255,255,.08); border-bottom:1px solid rgba(255,255,255,.08);"><div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#67bd9f; margin-bottom:14px;">03</div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px; margin-bottom:9px;">Citizen &amp; health records</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Link a person's records accurately across care and services.</p></div>
+        <div style="padding:32px 30px; border-right:1px solid rgba(255,255,255,.08); border-bottom:1px solid rgba(255,255,255,.08);"><div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#67bd9f; margin-bottom:14px;">04</div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px; margin-bottom:9px;">Data quality &amp; MDM</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">De-duplicate and reconcile records across master data.</p></div>
+        <div style="padding:32px 30px; border-right:1px solid rgba(255,255,255,.08);"><div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#67bd9f; margin-bottom:14px;">05</div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px; margin-bottom:9px;">Investigations</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Link people across disparate sources during due diligence.</p></div>
+        <div style="padding:32px 30px;"><div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#67bd9f; margin-bottom:14px;">06</div><div style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px; margin-bottom:9px;">Customer 360</div><p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Unify fragmented customer records into one profile.</p></div>
+      </div>
     </div>
+  </div>
 
-	<!-- Projects -->
-	<div id="work" class="filter">
-		<div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">OUR WORK</div>
-                    <h2>Our Consultants Have Worked With</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Filter -->
-                    <div class="button-group filters-button-group">
-                        <a class="button is-checked" data-filter="*"><span>ALL</span></a>
-                        <a class="button" data-filter=".banking"><span>BANKING</span></a>
-                        <a class="button" data-filter=".tech"><span>TECHNOLOGY</span></a>
-                        <a class="button" data-filter=".telecomms"><span>TELECOMMS</span></a>
-                        <a class="button" data-filter=".public"><span>PUBLIC SECTOR</span></a>
-                    </div>
-                    <div class="grid">
-                        <div class="element-item public">
-                            <div class="element-item-overlay move-anim"><span>Scottish Government</span></div><img src="images/scotgov.jpg" alt="alternative">
-                        </div>
-                        <div class="element-item tech">
-                            <div class="element-item-overlay move-anim"><span>Ikon Science</span></div><img src="images/ikon.png" alt="alternative">
-                        </div>
-                        <div class="element-item telecomms">
-                            <div class="element-item-overlay move-anim"><span>Sky</span></div><img src="images/sky.jpg" alt="alternative">
-                        </div>
-                        <div class="element-item banking">
-                            <div class="element-item-overlay move-anim"><span>HSBC</span></div><img src="images/hsbc.jpg" alt="alternative">
-                        </div>
-                        <div class="element-item tech">
-                            <div class="element-item-overlay move-anim"><span>Encompass Corporation</span></div><img src="images/encompass.png" alt="alternative">
-                        </div>
-                        <div class="element-item banking">
-                            <div class="element-item-overlay move-anim"><span>JP Morgan</span></div><img src="images/jpmorgan.jpg" alt="alternative">
-                        </div>
-                        <div class="element-item tech">
-                            <div class="element-item-overlay move-anim"><span>Monitise</span></div><img src="images/monitise.jpg" alt="alternative">
-                        </div>
-                        <div class="element-item banking">
-                            <div class="element-item-overlay move-anim"><span>RBS</span></div><img src="images/rbs.png" alt="alternative">
-                        </div>
-                        <div class="element-item banking">
-                            <div class="element-item-overlay move-anim"><span>Unicredit</span></div><img src="images/unicredit.png" alt="alternative">
-                        </div>
-                        <div class="element-item banking">
-                            <div class="element-item-overlay move-anim"><span>Clydesdale Bank</span></div><img src="images/clydesdale.jpg" alt="alternative">
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-		</div>
+  <!-- ========= FINAL CTA ========= -->
+  <div id="demo" style="border-bottom:1px solid rgba(255,255,255,.08);">
+    <div style="max-width:1240px; margin:0 auto; padding:104px 48px; text-align:center;">
+      <div style="display:inline-flex; align-items:center; gap:10px; margin-bottom:24px;"><span style="width:7px;height:7px;background:linear-gradient(120deg,#67bd9f,#00aad9);"></span><span style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:3px; color:#67bd9f; text-transform:uppercase;">See it in action</span></div>
+      <h2 style="margin:0 auto 22px; font-weight:700; font-size:52px; line-height:1.02; letter-spacing:-0.03em; max-width:760px;">See Tetra Connect in action.</h2>
+      <p style="margin:0 auto 38px; font-size:18px; line-height:1.62; color:#aab2c8; max-width:600px;">Book a walkthrough in our demo environment and we'll show Tetra Connect matching messy records live — with the score breakdown behind every result. When you're ready to try your own data, we'll set up a proof of concept.</p>
+      <a href="#demo" style="display:inline-block; background:linear-gradient(120deg,#67bd9f,#00aad9); color:#0d1424; font-weight:600; font-size:16px; padding:17px 40px;">Book a demo</a>
     </div>
+  </div>
 
-    <!-- Team -->
-    <div id="team" class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Our Team</h2>
-                    <p class="p-heading">Tetra Leadership</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/shahbaz.jpg" alt="alternative">
-                        </div>
-                        <p class="p-large">Shahbaz Mahmood</p>
-                        <p class="job-title">Chief Marketing Officer (CMO)</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="https://www.linkedin.com/in/shahbaz-mahmood/" target="_blank">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div>
-
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/andrew.jpg" alt="alternative">
-                        </div>
-                        <p class="p-large">Andrew MacBean</p>
-                        <p class="job-title">Chief Financial Officer (CFO)</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="https://www.linkedin.com/in/macbean/" target="_blank">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div>
-
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/marco.jpg" alt="alternative">
-                        </div>
-                        <p class="p-large">Marco Sarconi</p>
-                        <p class="job-title">Chief Operating Officer (COO)</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="https://www.linkedin.com/in/marco-src/" target="_blank">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div>
-
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/scott.jpg" alt="alternative">
-                        </div>
-                        <p class="p-large">Scott Stevenson</p>
-                        <p class="job-title">Chief Technology Officer (CTO)</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="https://www.linkedin.com/in/sjastevenson/" target="_blank">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div>
-
-                </div>
-            </div>
+  <!-- ========= FOOTER ========= -->
+  <div style="background:#0b0f1c;">
+    <div style="max-width:1240px; margin:0 auto; padding:56px 48px 40px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:40px; flex-wrap:wrap; padding-bottom:36px; border-bottom:1px solid rgba(255,255,255,.08);">
+        <div style="max-width:340px;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+            <span style="font-family:'Gemunu Libre',sans-serif; font-weight:700; font-size:22px; letter-spacing:2px; background:linear-gradient(120deg,#67bd9f,#00aad9); -webkit-background-clip:text; background-clip:text; color:transparent;">TETRA</span>
+            <span style="width:1px;height:16px;background:#fff;opacity:.22;"></span>
+            <span style="font-family:'Gemunu Libre',sans-serif; font-weight:600; font-size:13px; letter-spacing:5px; color:#eef1f6;">CONNECT</span>
+          </div>
+          <p style="margin:0; font-size:14px; line-height:1.6; color:#8b93a7;">Real-time identity resolution and person matching. A product of Tetra Technology Ltd.</p>
         </div>
-    </div>
-
-
-    <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="text-container">
-                        <h4>Where to find us</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="address"><i class="fas fa-map-marker-alt"> <a href="https://maps.app.goo.gl/DXVAGaPwZJxM5FWW8">16 Gordon St, Glasgow, G1 3PU</a></i></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="text-container text-right">
-                        <h4>Get In Touch</h4>
-
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="https://facebook.com/tetratechuk">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="https://twitter.com/tetratechuk">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="https://www.linkedin.com/company/tetratechuk">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                                </a>
-                            </span>
-
-                            <span class="fa-stack">
-                                <a href="mailto:sales@tetratechnology.co.uk">
-                                    <span class="hexagon white"></span>
-                                    <i class="far fa-envelope fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div>
-                </div>
-            </div>
+        <div style="display:flex; gap:64px;">
+          <div>
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:2px; color:#5b6478; text-transform:uppercase; margin-bottom:14px;">Product</div>
+            <div style="display:flex; flex-direction:column; gap:10px; font-size:14px;"><a href="#capabilities" style="color:#aab2c8;">Capabilities</a><a href="#scoring" style="color:#aab2c8;">Scoring</a><a href="#security" style="color:#aab2c8;">Security</a><a href="#use-cases" style="color:#aab2c8;">Use cases</a></div>
+          </div>
+          <div>
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:2px; color:#5b6478; text-transform:uppercase; margin-bottom:14px;">Tetra Technology</div>
+            <div style="display:flex; flex-direction:column; gap:10px; font-size:14px;"><a href="https://tetratechnology.co.uk" target="_blank" style="color:#aab2c8;">Consultancy →</a><a href="#" style="color:#aab2c8;">tetratechnology.co.uk</a><a href="#demo" style="color:#aab2c8;">Book a demo</a><a href="#" style="color:#aab2c8;">Contact</a></div>
+          </div>
         </div>
+      </div>
+      <div style="padding-top:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-family:'IBM Plex Mono',monospace; font-size:12px; color:#5b6478;">
+        <span>© 2026 Tetra Technology Ltd · 16 Gordon St, Glasgow</span>
+        <span>connect.tetratechnology.co.uk</span>
+      </div>
     </div>
+  </div>
 
-
-
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright &copy; 2026 Tetra Technology | <a href="docs/Modern_Slavery_Statement_Tetra_Technology.pdf">Modern Slavery Statement</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
-    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</div>
 </body>
 </html>
